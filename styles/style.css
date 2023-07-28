@@ -9,8 +9,8 @@
 /* Шапка */
 
 .header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
     margin: 92px 49px 92px 51px;
 }
 
@@ -57,7 +57,6 @@
 
 .header__logo {
     width: 136.5px;
-    margin-right: 165px;
 }
 
 .address {
@@ -69,6 +68,7 @@
     flex-direction: column;
     width: 240px;
     align-items: flex-start;
+    justify-self: right;
 }
 
 .address__contact {
@@ -109,8 +109,7 @@
     text-transform: uppercase;
     position: relative;
     z-index: 1;
-    display: flex;
-    min-height: 355px;
+    display: block;
     margin-top: 165px;
     margin-left: 50px;
     margin-right: 50px;
@@ -119,18 +118,23 @@
 }
 
 .aligned-text {
-    display: flex;
+    display: block;
+    text-align: left;
 }
 
 .aligned-text_center {
-    display: flex;
+    display: block;
     align-items: center;
     padding-left: 37px;
+    text-align: center;
+    padding-top: 35px;
 }
 
 .aligned-text_right {
-    display: flex;
+    display: block;
     align-items: flex-end;
+    text-align: right;
+    padding-top: 20px;
 }
 
 .letter-spacing-extended {
@@ -194,7 +198,6 @@
 
 .lots__heading {
     color: #000;
-    font-family: Raleway;
     font-size: 40px;
     font-weight: 700;
     line-height: normal;
@@ -318,7 +321,6 @@
 .about__text_paragraph {
     margin-bottom: 25px;
     color: #000;
-    font-family: Raleway;
     font-size: 20px;
     font-weight: 400;
     line-height: normal;
